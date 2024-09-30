@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar .logo {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    float: right;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-links li a:hover {
+    color: #ddd;
+}
+
+
+.hero {
+    background-image: url(5-ways-to-build-trust.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+    left: -60px;
+    top: 50px;
+}
+
+.hero .btn:hover {
+    background-color: #e67e22;
+}
+
+
+.about-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.services-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services-section .service-box {
+    display: inline-block;
+    width: 30%;
+    margin: 20px 1.5%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.services-section .service-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-section .service-box p {
+    font-size: 16px;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        float: none;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .services-section .service-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .hero{
+        background-size: contain; 
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+    .hero{
+        background-size: contain; 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hero .btn{
+        left: 0px;
+        top: 20px;
+    }
+}
